@@ -1,6 +1,6 @@
 public class kadanealgomaxsumsubary {
     public static void main(String[] args) {
-        int[] arr = { -2, 1, 2 };
+        int[] arr = { -2, -1, -2 };
         int[] tempindex = kadaneAlgo(arr);
         for (int i = tempindex[0]; i <= tempindex[1]; i++) {
             System.out.println(arr[i]);

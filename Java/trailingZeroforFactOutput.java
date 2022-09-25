@@ -8,7 +8,7 @@ public class trailingZeroforFactOutput {
     }
 
     public static void main(String[] args) {
-        System.out.println(trailingZero(30));
+        System.out.println(trailingZero(10));
     }
 
 }

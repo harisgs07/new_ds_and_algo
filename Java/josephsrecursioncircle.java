@@ -7,7 +7,7 @@ public class josephsrecursioncircle {
         if (nodes == 1) {
             return 0;
         }
-        return (josph(nodes - 1, interval) + interval) % nodes;
+        return (josph(nodes - 1, interval) + interval) % nodes - 1;
     }
 
 }
