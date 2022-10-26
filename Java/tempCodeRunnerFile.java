@@ -1,2 +1,1 @@
-obj.addElemnt(10);
-        // obj.addElemnt(20);  
+Arrays.fill(visited, false);

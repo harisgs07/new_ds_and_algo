@@ -17,9 +17,7 @@ public class swap_number_bitwise {
                 a = (a ^ b);
                 System.out.println(a);
                 System.out.println(b);
-
             };
-
         };
         r.getSwap(num1, num2);
 
