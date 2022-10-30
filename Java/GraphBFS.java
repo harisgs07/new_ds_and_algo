@@ -21,7 +21,7 @@ public class GraphBFS {
 
     void printBFS(ArrayList<ArrayList<Integer>> adjListGraph, int source, int vertex) {
 
-        ArraList<Boolean> ntemp = new ArraList<>();
+        ArrayList<Boolean> ntemp = new ArrayList<>();
         boolean visited[] = new boolean[vertex];
         Arrays.fill(visited, false);
         visited[source] = true;

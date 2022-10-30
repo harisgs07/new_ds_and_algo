@@ -44,7 +44,7 @@ public class GraphMinimumSpanningTreePriorityQueue {
     static PriorityQueue<Pair> minedge = new PriorityQueue<>();
     static int ans = 0;
 
-    static void bfs(int start, int vertices, int destination) {
+    static void bfs(int start, int vertices) {
 
         minedge.add(new Pair(0, 0));
         while (!minedge.isEmpty()) {
@@ -53,8 +53,7 @@ public class GraphMinimumSpanningTreePriorityQueue {
                 continue;
             ans = ans + cur.edge;
             visited[cur.vertex] = true;
-            if (cur.vertex == destination)
-                break;
+
             for (Pair i : adjList.get(cur.vertex)) {
                 if (!visited[i.vertex]) {
                     minedge.add(i);
@@ -84,7 +83,7 @@ public class GraphMinimumSpanningTreePriorityQueue {
 
             addEdge(start, end, vertices, weight, true);
         }
-        bfs(0, vertices, 4);
+        bfs(0, vertices);
 
     }
 
